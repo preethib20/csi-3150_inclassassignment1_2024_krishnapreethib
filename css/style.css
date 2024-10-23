@@ -67,6 +67,11 @@ body {
     margin-bottom: 20px; 
 }
 
+.available-colors span {
+    font-size: 14px;
+    color: black;
+}
+
 .color-box {
     display: inline-block;
     width: 20px;
@@ -87,7 +92,6 @@ body {
     color: black;
     margin-bottom: 20px;
 }
-
 
 .buy-button {
     width: 150px;
