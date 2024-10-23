@@ -1,66 +1,107 @@
 
 body {
     background-color: black;
-    color: lightgray;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 
-header, main {
+.container {
+    display: flex;
     width: 800px;
-    height: 500px;
-    margin: 120px auto 0;
-    padding: 20px;
     background-color: white;
-    color: black;
-    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 
-h2 {
+.image-section img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.info-section {
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.info-section h2 {
     font-size: 32px;
     margin-bottom: 15px;
+    color: black;
 }
 
 
-h3 {
+.info-section h3 {
     font-size: 18px;
     margin-bottom: 20px;
+    color: lightgray;
 }
 
 
-main div p {
+.info-section p {
     font-size: 14px;
-    padding-left: 50px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.available-colors {
     margin-bottom: 20px;
 }
 
-
-h2 + p {
+.available-colors span {
     font-size: 14px;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-right: 10px;
 }
 
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
 
-p + form {
+.color-box.black { background-color: black; }
+.color-box.red { background-color: red; }
+.color-box.beige { background-color: beige; }
+
+
+.price {
     font-size: 32px;
+    font-weight: bold;
+    color: black;
     margin-bottom: 20px;
 }
 
 
-form button {
+.buy-button {
     width: 150px;
     height: 40px;
-    background-color: gray;
+    background-color: black;
     color: white;
-    border: none;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
-form button:hover {
-    background-color: darkgray;
+.buy-button:hover {
+    background-color: gray;
 }
 
