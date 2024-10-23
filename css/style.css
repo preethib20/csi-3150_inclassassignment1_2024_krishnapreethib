@@ -67,11 +67,6 @@ body {
     margin-bottom: 20px; 
 }
 
-.available-colors span {
-    font-size: 14px;
-    color: black;
-}
-
 .color-box {
     display: inline-block;
     width: 20px;
